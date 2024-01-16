@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <input type="email" id="loginEmail" placeholder="Email">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <a href="forgetPassword.html">Forget Your Password?</a>
+                <button onclick="loginUser()">Sign In</button>
+            </form>
+        </div>
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <input type="text" id="firstName" placeholder=" First Name ">
+                <input type="text" id="lastName" placeholder="Last Name ">
+                <input type="email" id="email" placeholder="Email ">
+                <input type="tel" id="phoneNumber" placeholder="Phone Number ">
+                <input type="password" id="password" placeholder="Password">
+                <input type="password" id="repeatPassword" placeholder="Repeat Password">
+                <button onclick="registerUser() ">Sign Up</button>
+            </form>
+        </div>
+        <div class="toggle-container ">
+            <div class="toggle ">
+                <div class="toggle-panel toggle-left ">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to access learning materials</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right ">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to enable us reach you.</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class=" text-center mt-4 ">
+        Powered by <img src="logo.jpg " alt="Your Logo " width="50 ">
+        <p class="mt-2 ">&copy; 2024 Optiedge Nig. Ltd. All rights reserved.</p>
+    </footer>
+    <script src="script.js "></script>
+</body>
+
+</html>
